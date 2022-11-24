@@ -1,0 +1,41 @@
+Basic Instructions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ALU: 
+A
+add addu addi addiu	 	 
+sub subu
+sra
+
+L
+and andi
+or  ori
+xor xori
+nor
+sll srl 
+----------------------------------------
+Multiply unit:
+mult multu
+div  divu
+mflo mfhi (mv from ...)
+----------------------------------------
+Mem access:
+lb lbu lh lhu lw lui
+sb     sh sw
+----------------------------------------
+Branching:
+j
+beq bne 	
+bgez bltz	
+----------------------------------------
+Setting:
+slt sltu slti sltiu
+----------------------------------------
+Misc:
+syscall
+
+PseudoInstructions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+move 
+la li 
+lw sw  
+nop 
