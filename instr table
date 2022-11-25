@@ -1,41 +1,34 @@
-Basic Instructions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-ALU: 
-A
-add addu addi addiu	 	 
-sub subu
-sra
-
-L
-and andi
-or  ori
-xor xori
-nor
-sll srl 
-----------------------------------------
-Multiply unit:
-mult multu
-div  divu
-mflo mfhi (mv from ...)
-----------------------------------------
-Mem access:
-lb lbu lh lhu lw lui
-sb     sh sw
-----------------------------------------
-Branching:
+Basic Instructions                               Pseudoinstructions (often - any operands)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                     ALU:                                              
+add addu addi addiu	 	                           addu
+sub subu                                         subu
+sra                                              negu
+                                      
+and andi                                         and
+or  ori                                          or
+xor xori                                         xor
+nor                                              not
+sll srl                                          rol ror
+------------------------------------------------------------------------------------------
+                          Multiply unit:
+mult multu                                       mul
+div  divu                                        div
+mflo mfhi (mv from ...)                          divu remu
+                                                 abs
+------------------------------------------------------------------------------------------
+                             Mem access:
+lb lbu lh lhu lw lui                             la li lw
+sb     sh sw                                           sw
+------------------------------------------------------------------------------------------
+                              Branching:
 j
 beq bne 	
 bgez bltz	
-----------------------------------------
-Setting:
+------------------------------------------------------------------------------------------
+                                Setting:
 slt sltu slti sltiu
-----------------------------------------
-Misc:
-syscall
-
-PseudoInstructions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-move 
-la li 
-lw sw  
-nop 
+------------------------------------------------------------------------------------------
+                                   Misc:
+syscall                                          move
+                                                 nop
