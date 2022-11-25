@@ -1,21 +1,21 @@
 Basic Instructions                               Pseudoinstructions (often - any operands)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                                      ALU:                                              
-add addu addi addiu	 	                           addu
+add addu addi addiu	 	                 addu
 sub subu                                         subu
 sra                                              negu
-                                      
+                                         
 and andi                                         and
 or  ori                                          or
 xor xori                                         xor
 nor                                              not
 sll srl                                          rol ror
+                                                 abs
 ------------------------------------------------------------------------------------------
                           Multiply unit:
 mult multu                                       mul
 div  divu                                        div
 mflo mfhi (mv from ...)                          divu remu
-                                                 abs
 ------------------------------------------------------------------------------------------
                              Mem access:
 lb lbu lh lhu lw lui                             la li lw
@@ -27,8 +27,8 @@ beq bne (bit patterns) 	                         bge bgeu ble bleu bgt bgtu blt 
 bgez bltz	                                     beqz bnez (bit patterns) bgtz 
 ------------------------------------------------------------------------------------------
                                 Setting:
-												 seq sne
-												 sge sgeu sle sleu			
+						 seq sne
+						 sge sgeu sle sleu			
 slt sltu slti sltiu                              slt sltu sgt
 ------------------------------------------------------------------------------------------
                                    Misc:
