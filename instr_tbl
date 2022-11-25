@@ -1,7 +1,7 @@
 Basic Instructions                               Pseudoinstructions (often - any operands)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                                      ALU:                                              
-add addu addi addiu	 	                 addu
+add addu addi addiu	 	                           addu
 sub subu                                         subu
 sra                                              negu
                                          
@@ -24,11 +24,11 @@ sb     sh sw                                           sw
                               Branching:
 j                                                b (close jmp)
 beq bne (bit patterns) 	                         bge bgeu ble bleu bgt bgtu blt bltu
-bgez bltz	                                 beqz bnez (bit patterns) bgtz 
+bgez bltz	                                       beqz bnez (bit patterns) bgtz 
 ------------------------------------------------------------------------------------------
                                 Setting:
-						 seq sne
-						 sge sgeu sle sleu			
+seq sne
+sge sgeu sle sleu			
 slt sltu slti sltiu                              slt sltu sgt
 ------------------------------------------------------------------------------------------
                                    Misc:
