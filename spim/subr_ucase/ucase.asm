@@ -59,26 +59,6 @@ prompt:
 		.asciiz ">"
 
 
-# if_quit (buf)
-        .text
-        .globl if_quit
-
-if_quit:
-        li      $v0, 1
-
-        lbu     $t0, 0($a0)
-        li      $t1, 'Q'
-        bne     $t0, $t1, quit
-
-        lbu     $t0, 1($a0)
-        li      $t1, '\n'
-        bne     $t0, $t1, quit
-
-        li      $v0, 0
-
-quit:   jr      $ra
-
-
 # ucase_line (buf, buflen)
 		.text
 		.globl ucase_line
@@ -126,3 +106,21 @@ ucase_char:
 
 end:	jr		$ra
 
+# if_quit (buf)
+        .text
+        .globl if_quit
+
+if_quit:
+        li      $v0, 1
+
+        lbu     $t0, 0($a0)
+        li      $t1, 'Q'
+        bne     $t0, $t1, quit
+
+        lbu     $t0, 1($a0)
+        li      $t1, '\n'
+        bne     $t0, $t1, quit
+
+        li      $v0, 0
+
+quit:   jr      $ra
