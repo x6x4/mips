@@ -19,7 +19,7 @@ nextline:
 		beqz	$v0, endloop
 
 		la		$a0, buf
-		la      $a1, 132
+		li      $a1, 132
 		jal		ucase_line
 
 		la		$a0, magic
@@ -105,6 +105,7 @@ ucase_char:
 		sub		$v0, $a0, 32
 
 end:	jr		$ra
+
 
 # if_quit (buf)
         .text
