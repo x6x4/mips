@@ -3,8 +3,8 @@
 #	c.le.s
 
 #	check cond bit:
-#	bclt
-#	bclf
+#	bc1t - its 1!!!!!!!!!!!!! not l
+#	bc1f - the same
 
 #1	load
 #2	test conds
