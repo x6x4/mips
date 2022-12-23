@@ -7,6 +7,7 @@
 
 main:
 			la		$s0, head
+# dyn. v.	lw		$s0, header
 
 loop:		beqz	$s0, is_null
 
