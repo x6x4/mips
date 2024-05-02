@@ -1,3 +1,7 @@
+The first assembly steps. 
+
+////////////////////////////////
+
 # mips
 AAAAAAAAAAARRRRRRRGH
 
